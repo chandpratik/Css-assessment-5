@@ -1,0 +1,194 @@
+body {
+  background-color: white;
+}
+h1 {
+  text-align: center;
+}
+.skewx {
+  background-color: teal;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin-left: 50px;
+  animation-name: skewx;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+@keyframes skewx {
+  50% {
+    transform: skewX(30deg);
+  }
+  100% {
+    transform: skewX(-30deg);
+  }
+}
+ol {
+  margin-left: 391px;
+}
+
+.skewy {
+  background-color: lightcoral;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 70px;
+  animation-name: skewy;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+@keyframes skewy {
+  50% {
+    transform: skewY(30deg);
+  }
+  100% {
+    transform: skewY(-30deg);
+  }
+}
+
+.rotate {
+  background-color: lightskyblue;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 70px;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.random1 {
+  background-color: crimson;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 70px;
+  animation-name: scaley;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  transition: height 5s linear;
+}
+
+@keyframes scaley {
+  50% {
+    transform: scaleY(1);
+  }
+  90% {
+    transform: scaleY(-1);
+  }
+}
+
+.random2 {
+  background-color: crimson;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 70px;
+  animation: scalex 5s linear 0s infinite;
+}
+
+@keyframes scalex {
+  100% {
+    transform: scaleX(1.5);
+  }
+}
+.random3 {
+  background-color: crimson;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 70px;
+  animation-name: random;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes random {
+  100% {
+    transform: rotate(100deg);
+  }
+}
+
+.first-box {
+  background-color: teal;
+  width: 150px;
+  height: 150px;
+  transition: width 3s ease-in;
+}
+
+.first-box:hover {
+  width: 300px;
+}
+
+.second-box {
+  background-color: teal;
+  width: 150px;
+  height: 150px;
+  transition: width 2s ease-in, height 4s ease-in;
+}
+
+.second-box:hover {
+  width: 300px;
+  height: 380px;
+}
+
+.third-box {
+  background-color: teal;
+  width: 150px;
+  height: 150px;
+  transition: width 2s ease;
+}
+.third-box:hover {
+  width: 350px;
+}
+
+.fourth-box {
+  background-color: teal;
+  width: 150px;
+  height: 150px;
+  transition: width 1s ease-in;
+}
+.fourth-box:hover {
+  width: 350px;
+}
+
+.fifth-box {
+  background-color: teal;
+  width: 150px;
+  height: 150px;
+  transition: width 1s ease-out;
+}
+.fifth-box:hover {
+  width: 350px;
+}
+
+.sixth-box {
+  background-color: teal;
+  width: 150px;
+  height: 150px;
+  transition: width 2s ease-in-out;
+}
+.sixth-box:hover {
+  width: 350px;
+}
+
+.seventh-box {
+  background-color: teal;
+  width: 150px;
+  height: 150px;
+  transition: width 2s ease-in-out;
+}
+
+.seventh-box:hover {
+  width: 350px;
+}

@@ -1,0 +1,146 @@
+.sky {
+  width: auto;
+  height: 700px;
+  background-image: url(./sky.jpg);
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.road {
+  width: 300%;
+  height: 200px;
+  background-image: url(./road.jpg);
+  background-repeat: repeat-x;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  animation-name: road;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes road {
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+.sun {
+  position: absolute;
+  z-index: 2;
+  right: 84px;
+  top: 159px;
+  width: 105px;
+  height: 100px;
+  animation-name: sun;
+  animation-duration: 160s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sun {
+  50% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(-800px);
+  }
+}
+
+.city {
+  background-image: url(./city.png);
+  width: 300%;
+  height: 251px;
+  background-repeat: repeat-x;
+  position: absolute;
+  z-index: 2;
+  bottom: 199px;
+  animation-name: city;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-1700px);
+  }
+}
+
+.car {
+  position: absolute;
+  top: 415px;
+  z-index: 2;
+  left: 515px;
+  animation: car 1s linear infinite;
+}
+
+@keyframes car {
+  100% {
+    transform: translateY(2.3px);
+  }
+}
+
+.wheel1 {
+  position: absolute;
+  bottom: 103px;
+  z-index: 2;
+  left: 555px;
+  animation: wheel;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.wheel2 {
+  position: absolute;
+  bottom: 104px;
+  z-index: 2;
+  right: 609px;
+  animation: wheel;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.h {
+  position: absolute;
+  top: 11px;
+  right: 881px;
+  font-size: 54px;
+  background-color: orange;
+}
+
+.flag {
+  position: absolute;
+  top: 435px;
+  z-index: 2;
+  left: 865px;
+  width: 50px;
+}
+
+.i {
+  background-color: white;
+  position: absolute;
+  top: 11px;
+  left: 653px;
+  font-size: 54px;
+}
+
+.d {
+  position: absolute;
+  top: 11px;
+  font-size: 54px;
+  background-color: green;
+  left: 953px;
+}
